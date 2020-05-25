@@ -3,11 +3,13 @@ h2 {
 	font-size: 1.7rem;
 }
 
-a {
-	text-decoration: none;
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
-.wrapper { height: 130vh;
+a {
+	text-decoration: none;
 }
 
 /* ============== Black Navbar ================ */
@@ -90,7 +92,7 @@ a {
 }
 
 .head div {
-  min-height: 200px;
+  min-height: 270px;
   height: 100%;
 }
 
@@ -133,3 +135,95 @@ a {
 }
 
 /* ================== Latest News ====================== */
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.wrapper h2 {
+  color: #FF4422;
+  cursor: pointer;
+}
+
+.wrapper h2:hover {
+  color: black;
+}
+
+.latest-news {
+  margin-top: 100px;
+}
+
+.latest-news h2 {
+  margin: 30px 0;
+  width: fit-content;
+}
+
+.latest-news .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-article {
+  cursor: pointer;
+  margin: 0.9rem;
+  flex: 0 1 calc(25% - 1.8rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.news-article:nth-child(1), .news-article:nth-child(5) {
+  margin: 0.9rem 0.9rem 0.9rem 0;
+}
+
+.news-article:nth-child(4), .news-article:nth-child(8) {
+  margin: 0.9rem 0 0.9rem 0.9rem;
+}
+
+.news-article h3 {
+  padding-top: 1rem;
+}
+
+.news-article span {
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: #CACACA;
+}
+
+.news-article figure {
+  width: 100%;
+}
+
+.news-article figure img {
+  width: 100%;
+}
+
+.news-article span {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+/* ==================== Funding Section ============== */
+
+.funding {
+  margin: 6rem 0;
+}
+
+.funding header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.funding header div span {
+  padding-left: 1rem;
+  margin-left: 1rem;
+  border-left: solid #FF4422 1px;
+  color: #FF4422;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.funding header div span:first-child {
+  border: none;
+}
