@@ -4,8 +4,8 @@ h2 {
 }
 
 h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
 }
 
 a {
@@ -17,8 +17,8 @@ a {
 .first-nav {
 	background-color: #131313;
 	padding: 0.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  
+	font-family: Arial, Helvetica, sans-serif;
+
 	display: flex;
 	justify-content: space-between;
 }
@@ -30,200 +30,300 @@ a {
 }
 
 .first-nav .left-nav a:first-child {
-  margin-left: 0.8rem;
-  color: white;
+	margin-left: 0.8rem;
+	color: white;
 }
 
 .first-nav a:hover {
-  color: white;
+	color: white;
 }
 
 /* ============= Sticky Navbar ================= */
 
 .sticky-nav {
-  overflow: hidden;
-  background-color: white;
-  width: 100%;
+	overflow: hidden;
+	background-color: white;
+	width: 100%;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .sticky-nav .left-nav {
-  padding: 0.8rem;
+	padding: 0.8rem;
 }
 
-.sticky-nav .left-nav a{
-  letter-spacing: -0.05rem;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #CACACA;
-  padding: 0.4rem;
-  font-size: 0.9rem;
+.sticky-nav .left-nav a {
+	letter-spacing: -0.05rem;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #cacaca;
+	padding: 0.4rem;
+	font-size: 0.9rem;
 }
 
 .sticky-nav a:hover {
-  color: black;
+	color: black;
 }
 
 .sticky-nav button {
-  border: none;
-  border-radius: none;
-  border-left: 1px solid #CACACA;
-  border-bottom: 1px solid #CACACA;
-  color: #CACACA;
-  font-size: 0.9rem;
-  padding: 0.8rem;
+	border: none;
+	border-radius: none;
+	border-left: 1px solid #cacaca;
+	border-bottom: 1px solid #cacaca;
+	color: #cacaca;
+	font-size: 0.9rem;
+	padding: 0.8rem;
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
+	position: fixed;
+	top: 0;
 }
 
 /* ===================== Head ================= */
 
 .head {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 2fr 1fr;
-  gap: 10px;
-  margin: 10px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 2fr 1fr;
+	gap: 10px;
+	margin: 10px;
 }
 
 .head div {
-  min-height: 270px;
-  height: 100%;
+	min-height: 270px;
+	height: 100%;
 }
 
 .head span {
-  padding: 20px;
+	padding: 20px;
 }
 
 .head div:nth-child(2) {
-  background: url(https://github.com/kaliberpoziomka/tnw-responsive/blob/master/images/photo-header-2.jpg?raw=true) center center / cover;
+	background: url(https://github.com/kaliberpoziomka/tnw-responsive/blob/master/images/photo-header-2.jpg?raw=true)
+		center center / cover;
 }
 
 .head div:nth-child(3) {
-  background: url(https://github.com/kaliberpoziomka/tnw-responsive/blob/master/images/photo-header-3.jpg?raw=true) center center / cover;
+	background: url(https://github.com/kaliberpoziomka/tnw-responsive/blob/master/images/photo-header-3.jpg?raw=true)
+		center center / cover;
 }
 
 .span-row-2 {
-  grid-column: 1;
-  grid-row: 1 / -1;
-  background: url(https://raw.githubusercontent.com/kaliberpoziomka/tnw-responsive/master/images/photo-header-1.png) center center / cover ;
+	grid-column: 1;
+	grid-row: 1 / -1;
+	background: url(https://raw.githubusercontent.com/kaliberpoziomka/tnw-responsive/master/images/photo-header-1.png)
+		center center / cover;
 }
 
 .red-color {
-  background: rgba(228, 22, 22, 0.609);
-  height: 100%;
+	background: rgba(228, 22, 22, 0.609);
+	height: 100%;
 }
 
 .head a {
-  background: linear-gradient(rgba(0,0,0,0.0001), rgba(0,0,0,1));
-  height: 100%;
-  font-family: "Bungee", Arial, Helvetica, sans-serif;
-  color: white;
-  font-size: 1.2rem;
+	background: linear-gradient(rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 1));
+	height: 100%;
+	font-family: 'Bungee', Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 1.2rem;
 
-  display: flex;
-  align-items: flex-end;
+	display: flex;
+	align-items: flex-end;
 }
 
 .article a {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 /* ================== Latest News ====================== */
 
 .wrapper {
-  margin: 0 auto;
-  max-width: 1200px;
+	margin: 0 auto;
+	max-width: 1200px;
 }
 
 .wrapper h2 {
-  color: #FF4422;
-  cursor: pointer;
+	color: #ff4422;
+	cursor: pointer;
 }
 
 .wrapper h2:hover {
-  color: black;
+	color: black;
 }
 
 .latest-news {
-  margin-top: 100px;
+	margin-top: 100px;
 }
 
 .latest-news h2 {
-  margin: 30px 0;
-  width: fit-content;
+	margin: 30px 0;
+	width: fit-content;
 }
 
-.latest-news .flex-container {
-  display: flex;
-  flex-wrap: wrap;
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .news-article {
-  cursor: pointer;
-  margin: 0.9rem;
-  flex: 0 1 calc(25% - 1.8rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+	cursor: pointer;
+	margin: 0.9rem;
+	flex: 0 1 calc(25% - 1.4rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
-.news-article:nth-child(1), .news-article:nth-child(5) {
-  margin: 0.9rem 0.9rem 0.9rem 0;
+.news-article:nth-child(1),
+.news-article:nth-child(5) {
+	margin: 0.9rem 0.9rem 0.9rem 0;
 }
 
-.news-article:nth-child(4), .news-article:nth-child(8) {
-  margin: 0.9rem 0 0.9rem 0.9rem;
+.news-article:nth-child(4),
+.news-article:nth-child(8) {
+	margin: 0.9rem 0 0.9rem 0.9rem;
 }
 
 .news-article h3 {
-  padding-top: 1rem;
+	padding-top: 1rem;
 }
 
 .news-article span {
-  padding-top: 1rem;
-  font-size: 0.8rem;
-  color: #CACACA;
+	padding-top: 1rem;
+	font-size: 0.8rem;
+	color: #cacaca;
 }
 
 .news-article figure {
-  width: 100%;
+	width: 100%;
 }
 
 .news-article figure img {
-  width: 100%;
+	width: 100%;
 }
 
 .news-article span {
-  font-family: Arial, Helvetica, sans-serif
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ==================== Funding Section ============== */
 
 .funding {
-  margin: 6rem 0;
+	margin: 6rem 0;
 }
 
 .funding header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
 .funding header div span {
-  padding-left: 1rem;
-  margin-left: 1rem;
-  border-left: solid #FF4422 1px;
-  color: #FF4422;
-  font-family: Arial, Helvetica, sans-serif;
+	padding-left: 1rem;
+	margin-left: 1rem;
+	border-left: solid #ff4422 1px;
+	color: #ff4422;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .funding header div span:first-child {
-  border: none;
+	border: none;
+}
+
+.funding .flex-container {
+  margin-top: 3.5rem;
+}
+
+.funding-article {
+  flex: 0 0 calc(25% - 3.4rem);
+	padding: 1rem;
+	background: linear-gradient(
+		#ff4422,
+		#ff4422 17%,
+		#ffebe8 17%,
+		#ffebe8 40%,
+		#fffaf8 40%,
+		#fffaf8 67%,
+		#ff4422 67%,
+		#ff4422 calc(67% + 1px),
+		#fffaf8 67%
+	);
+	display: flex;
+	flex-direction: column;
+  height: 230px;
+  margin: 0.9rem;
+}
+
+.funding-article:nth-child(1) {
+  margin-left: 0;
+}
+
+.funding-article:nth-child(4) {
+  margin-right: 0;
+}
+
+.funding-article header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.funding-article header div {
+	margin-left: 20px;
+	flex: 1;
+	display: grid;
+	gap: 10px;
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.funding-article header img {
+	float: left;
+	width: 60px;
+}
+
+.funding-article header h3 {
+	color: white;
+	font-size: 1rem;
+}
+
+.funding-article header div h2 {
+	color: black;
+	font-size: 1.5rem;
+	font-family: 'Bungee';
+}
+
+.funding-article header div span {
+	color: rgb(112, 112, 112);
+	font-weight: 100;
+	font-size: 0.7rem;
+	padding: 0;
+	margin: -10px 0 0 0;
+	border: none;
+}
+
+.funding-article .tags {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 0;
+}
+
+.tags .tag-line {
+	flex: 1 1 100%;
+	margin-top: 5px;
+}
+
+.tags .tag-line span {
+	margin: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9rem;
+}
+
+.funding-article .bottom {
+	padding: 30px 0 30px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8rem;
+	color: rgb(77, 77, 77);
 }
