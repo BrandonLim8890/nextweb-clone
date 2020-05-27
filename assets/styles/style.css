@@ -1,3 +1,7 @@
+html, body {
+	min-height: 100%;
+}
+
 h2 {
 	font-family: 'Righteous', Arial, Helvetica, sans-serif;
 	font-size: 1.7rem;
@@ -94,6 +98,7 @@ a {
 .head div {
 	min-height: 270px;
 	height: 100%;
+	display: flex;
 }
 
 .head span {
@@ -119,12 +124,10 @@ a {
 
 .red-color {
 	background: rgba(228, 22, 22, 0.609);
-	height: 100%;
 }
 
 .head a {
 	background: linear-gradient(rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 1));
-	height: 100%;
 	font-family: 'Bungee', Arial, Helvetica, sans-serif;
 	color: white;
 	font-size: 1.2rem;
@@ -133,7 +136,8 @@ a {
 	align-items: flex-end;
 }
 
-.article a {
+
+.span-row-2 a {
 	font-size: 2.5rem;
 }
 
@@ -141,6 +145,7 @@ a {
 
 .wrapper {
 	margin: 0 auto;
+	padding: 20px;
 	max-width: 1200px;
 }
 
@@ -177,13 +182,11 @@ a {
 	align-items: flex-start;
 }
 
-.news-article:nth-child(1),
-.news-article:nth-child(5) {
+.news-article:nth-child(4n + 1) {
 	margin: 0.9rem 0.9rem 0.9rem 0;
 }
 
-.news-article:nth-child(4),
-.news-article:nth-child(8) {
+.news-article:nth-child(4n) {
 	margin: 0.9rem 0 0.9rem 0.9rem;
 }
 
@@ -212,7 +215,7 @@ a {
 /* ==================== Funding Section ============== */
 
 .funding {
-	margin: 6rem 0;
+	margin: 6rem 0 3rem 0;
 }
 
 .funding header {
@@ -234,11 +237,11 @@ a {
 }
 
 .funding .flex-container {
-  margin-top: 1.5rem;
+	margin-top: 1.5rem;
 }
 
 .funding-article {
-  flex: 0 0 calc(25% - 3.4rem);
+	flex: 0 0 calc(25% - 3.4rem);
 	padding: 1rem;
 	background: linear-gradient(
 		#ff4422,
@@ -253,16 +256,16 @@ a {
 	);
 	display: flex;
 	flex-direction: column;
-  height: 230px;
-  margin: 0.9rem;
+	height: 230px;
+	margin: 0.9rem;
 }
 
 .funding-article:nth-child(1) {
-  margin-left: 0;
+	margin-left: 0;
 }
 
 .funding-article:nth-child(4) {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 .funding-article header {
@@ -331,9 +334,18 @@ a {
 /* ======================== Apps ====================== */
 
 .apps-section {
-	flex: 0 1 calc(33%-20px)
+	flex: 0 1 calc(33% - 10px);
+	margin: 20px 10px;
 	display: flex;
 	flex-direction: column;
+}
+
+.apps-section:first-child {
+	margin-left: 0;
+}
+
+.apps-section:last-child {
+	margin-right: 0;
 }
 
 .apps-section h2 {
@@ -341,7 +353,8 @@ a {
 }
 
 .apps-section .back-img {
-	background: url(https://github.com/kaliberpoziomka/tnw-responsive/blob/master/images/greta.jpeg?raw=true) center center / cover;
+	background: url(https://github.com/kaliberpoziomka/tnw-responsive/blob/master/images/greta.jpeg?raw=true) center
+		center / cover;
 	width: 100%;
 	height: 250px;
 }
@@ -353,13 +366,17 @@ a {
 	align-items: flex-end;
 }
 
+.back-img a header {
+	padding: 15px;
+}
+
 .back-img a header h5 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 0.8rem;
 }
 
 .back-img a header h3 {
-	font-family: "Righteous", Arial, Helvetica, sans-serif;
+	font-family: 'Righteous', Arial, Helvetica, sans-serif;
 	font-size: 1.1rem;
 }
 
@@ -372,6 +389,269 @@ a {
 
 .back-img a header > * {
 	width: 100%;
-	margin: 15px;
+	margin: 15px 0;
 	color: white;
+}
+
+.header-flex {
+	display: flex;
+	justify-content: space-between;
+	height: 6rem;
+	background-color: #ffebe8;
+}
+
+.header-flex header span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.7rem;
+}
+
+.header-flex header {
+	padding: 1rem;
+	color: #ff4422;
+}
+
+.header-flex header h3 {
+	font-size: 0.9rem;
+	margin-top: 0.45rem;
+	font-weight: 600;
+}
+
+.header-flex .img {
+	background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Snag_f70c117.png') center center /
+		cover;
+	width: 10rem;
+}
+
+.apps-section ul li a::before {
+	content: '\2022';
+	color: #ff4422;
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 0.6rem;
+}
+
+.apps-section ul li a {
+	font-family: Arial, Helvetica, sans-serif;
+	display: block;
+	font-size: 0.8rem;
+	color: #8f8f8f;
+	padding: 0.6rem 0;
+	border-bottom: 1px solid rgba(230, 230, 230, 0.99);
+}
+
+.apps-section ul li a:hover {
+	color: black;
+}
+
+/* ========================== Latest Deals =========================== */
+
+.latest-deals {
+	margin: 3rem 0;
+}
+
+.latest-deals header {
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.deal:nth-child(4n + 1) {
+	margin-left: 0;
+}
+
+.deal:nth-child(4n) {
+	margin-right: 0;
+}
+
+.latest-deals header span {
+	color: #ff4422;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.deal {
+	flex: 0 1 calc(25% - 15px);
+	margin: 10px;
+}
+
+.deal figure {
+	width: 100%;
+}
+
+.deal figure img {
+	width: 100%;
+}
+
+.deal figcaption h2 {
+	color: black;
+	font-size: 1rem;
+	padding: 0.5rem 0;
+}
+
+.deal figcaption h4 span {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #8f8f8f;
+	text-decoration: line-through;
+	font-size: 0.8rem;
+}
+
+.deal figcaption h4 {
+	vertical-align: text-bottom;
+	color: black;
+	font-size: 1.2rem;
+}
+
+/* =========================== Main Footer ====================== */
+
+.main-footer {
+	width: 100%;
+	background: #131313;
+	height: 150px;
+}
+
+.main-footer .flex-container {
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-links {
+	margin-bottom: 20px;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.social-links a {
+	height: 40px;
+	width: 40px;
+	margin: 7px;
+	border-radius: 30px;
+	background: #333;
+	border: 1px solid #333;
+	color: white;
+	text-align: center;
+	font-size: 1.2rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-links a:hover {
+	background: #131313;
+}
+
+.links a {
+	margin: 0 0.5rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75rem;
+	color: rgb(124, 123, 123);
+}
+
+.links a:hover {
+	color: white;
+}
+
+/* ========================== Footer ======================== */
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	height: 100px;
+}
+
+footer span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8rem;
+	color: rgb(124, 123, 123);
+}
+
+/* ================== Responsive Layout ================= */
+
+@media (max-width: 1020px) {
+	/* News article */
+
+	.news-article {
+		flex: 0 1 calc(33% - 1.8rem);
+		margin: 0.9rem;
+	}
+	/* Reset margins */
+	.news-article:nth-child(4n),
+	.news-article:nth-child(4n + 1) {
+		margin: 0.9rem;
+	}
+
+	.news-article:nth-child(3n + 1) {
+		margin-right: 0;
+	}
+
+	.news-article:nth-child(3n) {
+		margin-left: 0;
+	}
+
+	/* Funding */
+
+	.funding-article {
+		flex: 0 0 calc(33.333% - 3.2rem);
+	}
+
+	.funding-article:last-child {
+		display: none;
+	}
+
+	.funding-article:nth-child(3) {
+		margin-right: 0;
+	}
+
+	/* Apps */
+
+	.apps-section {
+		flex: 0 1 calc(50% - 10px);
+	}
+
+	.apps-section:nth-child(2) {
+		margin-right: 0;
+	}
+
+	.apps-section:last-child {
+		margin: 20px 10px 20px 0;
+	}
+
+	/* Deals */
+
+	.deal {
+		flex: 0 1 calc(33% - 20px);
+	}
+
+	.deal:nth-child(4n + 1) {
+		margin-left: 10px;
+	}
+
+	.deal:nth-child(4n) {
+		margin-right: 10px;
+	}
+
+	.deal:nth-child(3n + 1) {
+		margin-left: 0;
+	}
+
+	.deal:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.head {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	.span-row-2 a {
+		font-size: 1.2rem;
+	}
+
 }
