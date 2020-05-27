@@ -158,7 +158,7 @@ a {
 }
 
 .latest-news h2 {
-	margin: 30px 0;
+	margin: 1.5rem 0;
 	width: fit-content;
 }
 
@@ -234,7 +234,7 @@ a {
 }
 
 .funding .flex-container {
-  margin-top: 3.5rem;
+  margin-top: 1.5rem;
 }
 
 .funding-article {
@@ -326,4 +326,52 @@ a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 0.8rem;
 	color: rgb(77, 77, 77);
+}
+
+/* ======================== Apps ====================== */
+
+.apps-section {
+	flex: 0 1 calc(33%-20px)
+	display: flex;
+	flex-direction: column;
+}
+
+.apps-section h2 {
+	margin-bottom: 1.5rem;
+}
+
+.apps-section .back-img {
+	background: url(https://github.com/kaliberpoziomka/tnw-responsive/blob/master/images/greta.jpeg?raw=true) center center / cover;
+	width: 100%;
+	height: 250px;
+}
+
+.apps-section .back-img a {
+	display: flex;
+	height: 100%;
+	background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7));
+	align-items: flex-end;
+}
+
+.back-img a header h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8rem;
+}
+
+.back-img a header h3 {
+	font-family: "Righteous", Arial, Helvetica, sans-serif;
+	font-size: 1.1rem;
+}
+
+.back-img a header span {
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.7rem;
+	bottom: 10px;
+}
+
+.back-img a header > * {
+	width: 100%;
+	margin: 15px;
+	color: white;
 }
